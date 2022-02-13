@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_bg_outgoing_bubble"
+        android:layout_alignParentRight="true"
+        android:maxWidth="350dp"
+        android:maxHeight="350dp"
+        android:minWidth="55dp"
+        android:minHeight="30dp"
+        android:paddingLeft="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtOutgoingMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textLongMessage|textMultiLine"
+            android:maxWidth="300dp"
+            android:minWidth="60dp"
+            android:text="sjkfnsjkdnfjksdnfjknsdjknjksnjkcnsdjkcnsjkdnjkcsdnjk"
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtOutgoingMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2:29pm"
+            android:textColor="#A6A2A2"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtOutgoingMessage" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="30dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>
